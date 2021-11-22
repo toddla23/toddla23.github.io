@@ -58,3 +58,8 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+comment:
+  provicer: "disqus"
+  disqus:
+    shortname: toddla
