@@ -4,7 +4,6 @@ title: "MongoDB 정리"
 date:   2021-11-11 20:34:09 +0900
 cartegories: jekyll update
 ---
-
 ## MongoDB 가 JS를 사용해서 얻은 특징
 
 - 웹 개발자에게 쉬운 입문이 가능히다
@@ -36,5 +35,4 @@ collection = db.det_collection("testCollection")
 
 # INSERT data in collection
 collection.insert_one({'hello':'world'})
-
 ```
