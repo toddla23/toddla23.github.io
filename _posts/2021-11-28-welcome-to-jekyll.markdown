@@ -1,38 +1,29 @@
 ---
 layout: post
-title: "MongoDB 정리"
-date:   2021-11-11 20:34:09 +0900
+title:  "Welcome to Jekyll!"
+date:   2021-11-28 21:18:37 +0900
 categories: jekyll update
 ---
-## MongoDB 가 JS를 사용해서 얻은 특징
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-- 웹 개발자에게 쉬운 입문이 가능히다
-- BSON 자료형을 사용
-- 내부 명령어를 JS 형식으로 사용
+Jekyll requires blog post files to be named according to the following format:
 
-## MongoDB의 CUD
+`YEAR-MONTH-DAY-title.MARKUP`
 
-### MongoBD의 기본 구조
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-- 데이버베이스 (<- datbase)
-- 컬렉션 (<- table)
-- 도큐먼트 (<- row)
+Jekyll also offers powerful support for code snippets:
 
-### Document -> BSON(Binary JSON) 자료구조
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
 
-```python
-# import pthon-mongo module
-import pymongo
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-# create connection between DB and Script
-connection = pymongo.MongoClient('mongo://localhost:27017/')
-
-# access database (if not exist, creare one!)
-db = connection.get_datbase("testDB")
-
-# access collection under database
-collection = db.det_collection("testCollection")
-
-# INSERT data in collection
-collection.insert_one({'hello':'world'})
-```
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
