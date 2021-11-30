@@ -59,6 +59,8 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
+url: https://toddla23.github.io/
+
 comment:
   provider:         "disqus"
   disqus:
